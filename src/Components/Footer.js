@@ -14,13 +14,14 @@ const Footer = () => {
         <div className="footer-logo-container">
           <img src={Logo} alt="" />
         </div>
+        <div className="footer-icons">
+          <BsTwitter />
+          <SiLinkedin />
+          <BsYoutube />
+          <FaFacebook />
+        </div>
       </div>
-      <div className="footer-icons">
-        <BsTwitter />
-        <SiLinkedin />
-        <BsYoutube />
-        <FaFacebook />
-      </div>
+
       <div className="footer-section-two">
         <div className="footer-section-columns">
           <span>Quality</span>
