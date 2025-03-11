@@ -19,8 +19,32 @@ import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+  const menuOptions = [
+    {
+      text: "Home",
+      icon: <HomeIcon />,
+    },
+    {
+      text: "About",
+      icon: <InfoIcon />,
+    },
 
-    
+    {
+      text: "Testimonials",
+      icon: <commentRoundedIcon />,
+    },
+
+    {
+      text: "Contact",
+      icon: <PhoneRoundedIcon />,
+    },
+    {
+      text: "Cart",
+      icon: <ShoppingCartRoundedIcon />,
+    },
+  ];
+
   return <div>Navbar</div>;
 };
 
