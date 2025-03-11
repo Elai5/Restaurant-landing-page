@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../Assets/Logo.svg";
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import commentRoundedIcon from "@mui/icons-matwrial/CommentRounded";
+import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 
@@ -45,7 +45,23 @@ const Navbar = () => {
     },
   ];
 
-  return <div>Navbar</div>;
+  return (
+    <nav>
+      <div className="nav-logo-container">
+        <img src={Logo} alt="FOODIE" />
+      </div>
+      <div className="navbar-links-container">
+        <a href="Home"></a>
+        <a href="">About</a>
+        <a href="">Testimonials</a>
+        <a href="">Contact</a>
+        <a href="">
+          <BsCart2 className="navbar-cart-icon" />
+        </a>
+        <button className="primary-button">Bookings Now</button>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
